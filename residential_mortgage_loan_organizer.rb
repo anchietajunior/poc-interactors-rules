@@ -15,6 +15,6 @@ class ResidentialMortgageLoanOrganizer
     # Execute anything we want after rules
   end
 
-  organize RuleCollectProjectInfo,
-           RuleCreateLoanFile
+  organize Rules::RuleCollectProjectInfo,
+           Rules::RuleCreateLoanFile
 end
