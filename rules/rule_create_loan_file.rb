@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 module Rules
-  # RuleCreateLoanFile
+  # This Rule/Class creats a new Loan File
+  # if the project or the organization is present
+  # for example or it could just stop the process with a fail!
   class RuleCreateLoanFile
     def call
       if context.project.present?
