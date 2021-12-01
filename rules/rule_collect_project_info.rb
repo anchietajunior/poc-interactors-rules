@@ -4,7 +4,7 @@ module Rules
   # RuleCollectProjectInfo
   class RuleCollectProjectInfo
     def call
-      return if params[:project].nil?
+      return if context.params[:project].nil?
 
       set_project_info
     end
