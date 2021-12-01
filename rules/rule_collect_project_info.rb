@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 module Rules
-  # RuleCollectProjectInfo
+  # This Rule/Class just set a project if it's present
+  # inside context.params
   class RuleCollectProjectInfo
     def call
       return if context.params[:project].nil?
